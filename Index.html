@@ -1,0 +1,36 @@
+        button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            color: pink;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="message">
+            Verdammt stark! jetzt musst du nur das Passwort finden!
+        </div>
+        <h2>Enter the Password</h2>
+        <input type="password" id="passwordInput" placeholder="Password">
+        <br>
+        <button onclick="checkPassword()">Submit</button>
+        <p id="errorMessage" style="color:blue;"></p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('passwordInput').value;
+            if (password === 'Gabelstapler') {
+                window.location.href = 'success.html';  // Redirects to the success page
+            } else {
+                document.getElementById('errorMessage').textContent = 'Incorrect password. Please try again.';
+            }
+        }
+    </script>
+
+</body>
+</html>
