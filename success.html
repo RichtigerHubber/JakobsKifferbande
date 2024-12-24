@@ -8,15 +8,17 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
         }
         .image-container {
-            margin: 20px 0;
+            display: flex;
+            gap: 20px;
+        }
+        .image-item {
             text-align: center;
         }
         .underscores {
@@ -28,13 +30,14 @@
 </head>
 <body>
     <div class="image-container">
-        <img src="Haus.png" alt="Bild 1" width="200">
-        <div class="underscores">_ _ _ _ _ _</div>
-    </div>
-
-    <div class="image-container">
-        <img src="Neo.jpg" alt="Bild 2" width="200">
-        <div class="underscores">_ _ _ _ _ _ _ _</div>
+        <div class="image-item">
+            <img src="Haus.png" alt="Bild 1" width="200">
+            <div class="underscores">_ _ _ _ _ _</div>
+        </div>
+        <div class="image-item">
+            <img src="Neo.jpg" alt="Bild 2" width="200">
+            <div class="underscores">_ _ _ _ _ _ _ _</div>
+        </div>
     </div>
 </body>
 </html>
